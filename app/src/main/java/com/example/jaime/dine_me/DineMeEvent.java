@@ -18,20 +18,12 @@ public class DineMeEvent {
     private int maxReservation;
     private String foods;
 
-    public DineMeEvent(int dbId, int groupId, String name, String description, String date, String imageUrl, int stars, int starVotes, int minReservation, int maxReservation, String foods) {
-        this.dbId = dbId;
-        this.name = name;
-        this.description = description;
-        this.date = date;
-        this.imageUrl = imageUrl;
-        this.stars = stars;
-        this.starVotes = starVotes;
-        this.minReservation = minReservation;
-        this.maxReservation = maxReservation;
+    //empty constructor to read obj
+    public DineMeEvent() {
+
     }
 
-
-    public DineMeEvent(@NonNull int id, int dbId, int groupId, String name, String description, String date, String imageUrl, int stars, int starVotes, int minReservation, int maxReservation, String foods) {
+    public DineMeEvent(int id, int dbId, int groupId, String name, String description, String date, String imageUrl, int stars, int starVotes, int minReservation, int maxReservation, String foods) {
         this.id = id;
         this.dbId = dbId;
         this.name = name;
